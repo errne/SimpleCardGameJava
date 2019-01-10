@@ -18,4 +18,12 @@ public class Player {
     public void getCardFromDeck(Deck deck) {
         currentCard = deck.deal();
     }
+
+    public void getIndividualCard(Card card){
+        currentCard = card;
+    }
+
+    public int getCurrentCardValue(){
+        return currentCard.getRank().getValue();
+    }
 }
